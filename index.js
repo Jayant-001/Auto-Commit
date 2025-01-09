@@ -53,6 +53,6 @@ performTask();
 // Set interval to run periodically
 setInterval(() => {
   performTask();
-}, interval);
+}, 1000);
 
 console.log('Script is running. The task will execute periodically.');
