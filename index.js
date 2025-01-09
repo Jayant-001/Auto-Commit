@@ -41,8 +41,8 @@ function performTask() {
 }
 
 // Schedule the task to run 4-7 times a day
-const minInterval = 1000 * 60 * 60 * 4; // 4 hours in milliseconds
-const maxInterval = 1000 * 60 * 60 * 7; // 7 hours in milliseconds
+const minInterval = 1000 * 60 * 60 * 3; // 3 hours in milliseconds
+const maxInterval = 1000 * 60 * 60 * 5; // 5 hours in milliseconds
 
 // Random interval between 4-7 hours
 const interval = Math.floor(Math.random() * (maxInterval - minInterval + 1)) + minInterval;
@@ -53,6 +53,6 @@ performTask();
 // Set interval to run periodically
 setInterval(() => {
   performTask();
-}, 1000);
+}, interval);
 
 console.log('Script is running. The task will execute periodically.');
